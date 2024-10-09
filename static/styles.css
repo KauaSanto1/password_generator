@@ -89,4 +89,7 @@ input[type="range"]::-moz-range-thumb {
     margin-left: 10px;
     font-size: 16px;
     color: white;
+    width: 30px; /* Define uma largura fixa para evitar movimentação */
+    text-align: center; /* Centraliza o texto */
+    display: inline-block; /* Garante que o elemento mantenha sua largura */
 }
