@@ -1,0 +1,92 @@
+body {
+    background-color: #0c0e12;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 80%; /* Aumenta a largura para ocupar mais espaço horizontalmente */
+    max-width: 800px; /* Limita a largura máxima para não ocupar toda a tela */
+    background-color: #1e1e1e;
+    padding: 40px; /* Aumenta o padding para dar mais espaço interno */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todos os elementos dentro do contêiner */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px; /* Adiciona espaço acima do botão */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Slider */
+.slider-container {
+    margin: 20px 0;
+    width: 100%; /* Faz o slider ocupar toda a largura do contêiner */
+    display: flex;
+    justify-content: center; /* Centraliza o slider */
+    align-items: center;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 70%; /* Ajusta a largura do slider */
+    height: 8px;
+    background: #ccc;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ffffff; /* Cor vermelha */
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ffffff; /* Cor vermelha */
+    cursor: pointer;
+}
+
+/* Estilização do valor do slider */
+#sliderValue {
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+}
